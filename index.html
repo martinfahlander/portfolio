@@ -1,0 +1,118 @@
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <title>Martin Fahlander</title>
+        <link rel="icon" href="resources/icons/code.svg" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" href="resources/stylesheet.css?v=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Lato&family=Texturina:wght@200&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div class="screen background">
+            <span class="nav--center">
+                <!-- <i class="nav--logo lni lni-code" style="font-size:50px"></i> -->
+                <img class="nav--logo" src="resources/icons/code.svg">
+            </span>
+            <span class="nav--right">
+                <a class="nav--link" href="https://www.linkedin.com/in/martin-fahlander-67b08813b/" target="_blank">
+                    <!-- <i class="nav--icon lni lni-linkedin-original" style="font-size:30px"></i> -->
+                    <img class="nav--icon" src="resources/icons/linkedin-original.svg">
+                </a>
+                <a class="nav--link" href="https://github.com/martinfahlander/" target="_blank">
+                    <!-- <i class="nav--icon lni lni-github-original" style="font-size:30px"></i> -->
+                    <img class="nav--icon" src="resources/icons/github-original.svg">
+                </a>
+                <span class="nav--link nav--link--lang" id="langmenu--button" onclick="toggleLangmenu()">
+                    <!-- <i class="nav--icon lni lni-world" style="font-size:40px"></i> -->
+                    <img class="nav--link--lang--icon" id="langmenu--button--icon" src="resources/icons/world.svg">
+                </span>
+                
+            </span>
+            <div class="langmenu" id="langmenu">
+                <a class="langmenu-link" href="index.html">Svenska</a>
+                <a class="langmenu-link" href="en/index.html">English</a>
+                <a class="langmenu-link" href="de/index.html">Deutsch</a>
+            </div>
+            <div class="content--start">
+                <div class="title title--start">Martin Fahlander</div>
+                <div id="subtitle">En nyfiken och kreativ systemvetare med intresse för design och språk.<br>Alltid öppen för nya utmaningar. Kontakta mig på <a href="mailto:martinfahlander@gmail.com" class="subtitle--link" target="_blank">martinfahlander@gmail.com</a>.</div>
+                <span class="tag">
+                    <!-- <i class="tag--icon lni lni-home" style="font-size:20px"></i> -->
+                    <img class="tag--icon" src="resources/icons/home.svg">
+                    <span class="tag--text">Skövde & Göteborg</span>
+                </span>
+                <span class="tag">
+                    <!-- <i class="tag--icon lni lni-briefcase" style="font-size:20px"></i> -->
+                    <img class="tag--icon" src="resources/icons/briefcase.svg">
+                    <span class="tag--text">Söker arbete</span>
+                </span>
+            </div>
+            <a href="#portfolio" class="icon--downarrow--link">
+                <div>öppna portfolio</div>
+                <!-- <i class="icon--downarrow lni lni-angle-double-down" style="font-size:45px;padding:10px;"></i> -->
+                <img class="icon--downarrow" src="resources/icons/angle-double-down.svg">
+            </a>
+        </div>
+        <div class="screen" id="portfolio" name="portfolio">
+            <div class="content--portfolio">
+                <div class="title">Portfolio</div>
+                <div class="container">
+                    <div class="item">
+                        <!-- <img class="item--image" src="resources/project1.png"> -->
+                        <div class="item--image" style="height:170px; background-color:#222"></div>
+                        <div class="item--title">Projekt 1</div>
+                    </div>
+                    <div class="item">
+                        <!-- <img class="item--image" src="resources/project1.png"> -->
+                        <div class="item--image" style="height:170px; background-color:#222"></div>
+                        <div class="item--title">Projekt 2 </div>
+                    </div>
+                    <div class="item">
+                        <!-- <img class="item--image" src="resources/project1.png"> -->
+                        <div class="item--image" style="height:170px; background-color:#222"></div>
+                        <div class="item--title">Projekt 3</div>
+                    </div>
+                    <div class="item">
+                        <!-- <img class="item--image" src="resources/project1.png"> -->
+                        <div class="item--image" style="height:170px; background-color:#222"></div>
+                        <div class="item--title">Projekt 4</div>
+                    </div>
+                    <div class="item">
+                        <!-- <img class="item--image" src="resources/project1.png"> -->
+                        <div class="item--image" style="height:170px; background-color:#222"></div>
+                        <div class="item--title">Projekt 5</div>
+                    </div>
+                    <div class="item">
+                        <!-- <img class="item--image" src="resources/project1.png"> -->
+                        <div class="item--image" style="height:170px; background-color:#222"></div>
+                        <div class="item--title">Projekt 6</div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="line--background"></div> -->
+            <footer class="footer">
+                <div class="footer--content">
+                    <span>
+                        Foto av 
+                        <a href="https://unsplash.com/photos/sTzIHQ_MGAM" target="_blank" class="footer--link">Ivana Cajina</a>
+                        på
+                        <a href="https://unsplash.com/" target="_blank" class="footer--link">Unsplash</a>
+                    </span>
+                </div>
+            </footer>
+        </div>
+        
+        <script>
+            function toggleLangmenu(){
+                
+
+                var langmenu = document.getElementById('langmenu');
+                var button = document.getElementById('langmenu--button');
+                document.body.addEventListener('click', langmenu.classList.toggle("langmenu--active"))
+                langmenu.classList.toggle("langmenu--active");
+                button.classList.toggle("nav--link--lang--active")
+            }
+        </script>
+    </body>
+</html>
