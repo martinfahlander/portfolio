@@ -42,14 +42,15 @@ body{
     background-image:radial-gradient(#555 1px, rgba(0, 0, 0, 0) 1px), url("background.jpg");
     background-size:25px 25px, cover;
 }
-.content--start{
+.content{
     width:70%;
+}
+.content--start{
     padding:calc(50vh - 120px) 15% 0px 15%;
     height:220px;
 }
 .content--portfolio{
-    width:calc(70% + 80px);
-    padding:0px calc(15% - 40px);
+    padding:0px 15%;
 }
 .nav{
     display:flex;
@@ -57,11 +58,17 @@ body{
     position:absolute;
     top:0px;
 }
+.nav--left{
+    visibility:hidden;
+    left:10px;
+    margin:25px;
+}
 .nav--center{
-    margin:0px calc(50% - 50px);
+    margin:28px calc(50% - 25px);
 }
 .nav--right{
-    right:20px;
+    right:0px;
+    margin:25px;
 }
 .nav--link{
     color:white;
@@ -69,11 +76,16 @@ body{
     text-decoration:none;
     font-family:"Texturina", sans-serif;
     font-size:18px;
-    margin: 35px 17px;
+    margin: 14px 17px;
+}
+.nav--icon{
+    padding:0px;
+    width:33px;
+    height:33px;
 }
 .nav--link--lang{
     cursor:pointer;
-    margin: 30px 17px;
+    margin: 10px 17px;
 }
 .nav--link--lang--icon{
     width:43px;
@@ -81,9 +93,8 @@ body{
 }
 .nav--logo{
     color:white;
-    margin:24px;
-    width:55px;
-    height:55px;
+    width:50px;
+    height:50px;
 }
 .langmenu{
     visibility:hidden;
@@ -127,11 +138,7 @@ body{
 .subtitle--link{
     color:white;
 }
-.nav--icon{
-    padding:0px;
-    width:33px;
-    height:33px;
-}
+
 .icon--downarrow--link{
     margin:20px calc(50% - 75px);
     position:absolute;
@@ -145,8 +152,8 @@ body{
 }
 .icon--downarrow{
     margin-top:13px;
-    width:50px;
-    height:50px;
+    width:45px;
+    height:45px;
 }
 .tag{
     background-color: white;
@@ -174,6 +181,47 @@ body{
 
 @media screen and (min-width:1000px) and (max-width:1300px) {}
 
-@media only screen and (hover: none) and (pointer: coarse){
-    
+/* @media only screen and (hover: none) and (pointer: coarse){ */
+    .background{
+        background-size:40px 40px, cover;
+    }
+    .nav--left{
+        visibility:visible;
+        left:20px;
+        margin:50px;
+    }
+    .nav--center{
+        visibility:hidden;
+    }
+    .nav--right{
+        margin:50px;
+    }
+    .nav--link{
+        margin: 28px 34px;
+    }
+    .nav--icon{
+        width:66px;
+        height:66px;
+    }
+    .nav--link--lang{
+        margin: 20px 34px;
+    }
+    .nav--link--lang--icon{
+        width:86px;
+        height:86px;
+    }
+    .nav--logo{
+        width:100px;
+        height:100px;
+    }
+    .icon--downarrow--link{
+        margin:40px calc(50% - 150px);
+        width:300px; 
+        font-size:40px;
+    }
+    .icon--downarrow{
+        margin-top:26px;
+        width:90px;
+        height:90px;
+    }
 }
