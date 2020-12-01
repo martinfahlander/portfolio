@@ -47,11 +47,11 @@ body{
     width:70%;
 }
 .content--start{
-    padding:calc(50vh - 120px) 15% 0px 15%;
+    /* padding:calc(50vh - 120px) 15% 0px 15%; */
     height:220px;
 }
 .content--portfolio{
-    padding:0px 15%;
+    /* padding:0px 15%; */
 }
 .nav{
     display:flex;
@@ -129,7 +129,7 @@ body{
     margin:0px 0px 0px 0px;
     padding:0px;
 }
-#subtitle{
+.subtitle{
     text-align:left;
     font-size:20px;
     font-family:"Castoro";
@@ -180,11 +180,37 @@ body{
     top:0.5px
 }
 
-/* @media screen and (min-width:1000px) and (max-width:1300px) {} */
+@media screen and (min-width:1000px) and (max-width:1300px) {}
 
-@media only screen and (hover: none) and (pointer: coarse){
+/* @media only screen and (hover: none) and (pointer: coarse){ */
     .background{
         background-size:40px 40px, cover;
+    }
+    .content{
+        width: calc(100% - 200px);
+        padding:300px 100px;
+    }
+    .title--start{
+        font-size:90px;
+    }
+    .subtitle{
+        font-size:30px;
+    }
+    .tag{
+        border-radius:14px;
+        padding:24px;
+        margin-right:40px;
+    }
+    .tag--icon{
+        width:48px;
+        height:48px;
+        top:18px;
+        left:0px;
+    }
+    .tag--text{
+        margin:0px 12px 0px 20px;
+        font-size: 30px;
+        top:5px
     }
     .nav--left{
         visibility:visible;
