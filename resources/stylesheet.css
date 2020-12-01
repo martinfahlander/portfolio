@@ -1,31 +1,23 @@
 body{
     margin:0px;
-    /* background-color:#333; */
     background-color: #333;
     font-family:"Castoro";
     color:white;
-    
 }
-/* html, body { overflow: hidden} */
-
 .container{
    display:flex;
    justify-content:space-between;
    flex-wrap:wrap;
    padding:10px 0px 50px 0px; 
 }
-
-
 .item{
     margin:30px 40px;
     width:calc(33.333% - 80px);
 }
-.item:hover item--hoverbox{
-    /* display: */
-}
 .item--image{
     width:100%;
-    background-color:white;
+    height:170px;
+    background-color:#222;
 }
 .item--title{
     font-size:25px;
@@ -40,14 +32,6 @@ body{
     background-image:radial-gradient(#555 1px, rgba(0, 0, 0, 0) 1px);
     background-size:25px 25px;
 }
-.line--background{
-    width:100%;
-    height:3px;
-    background-image:url("background.jpg");
-}
-.footer{
-    /* border-top:3px #161E23 solid; */
-}
 .footer--content{
     padding:50px 15%;
 }
@@ -56,7 +40,7 @@ body{
 }
 .background{
     background-image:radial-gradient(#555 1px, rgba(0, 0, 0, 0) 1px), url("background.jpg");
-    background-size:25px 25px, 100%;
+    background-size:25px 25px, cover;
 }
 .content--start{
     width:70%;
@@ -67,35 +51,17 @@ body{
     width:calc(70% + 80px);
     padding:0px calc(15% - 40px);
 }
-#nav{
-    display:flex;
-    /* background-color:#333; */
-    /* border-width:0px 0px 2px 0px;
-    border-style:solid;
-    border-color:white; */
-}
-.nav--left{
+.nav{
     display:flex;
     justify-content:flex-start;
-    padding-left:20px;
-    right:0px;
+    position:absolute;
+    top:0px;
 }
 .nav--center{
-    display:flex;
-    justify-content:center;
-    position:absolute;
-    top:0px;
     margin:0px calc(50% - 50px);
-    width:100px;
-    text-align:center;
 }
 .nav--right{
-    display:flex;
-    justify-content:flex-end;
-    padding-right:20px;
-    position:absolute;
-    right:0px;
-    top:0px;
+    right:20px;
 }
 .nav--link{
     color:white;
@@ -111,11 +77,8 @@ body{
 }
 .nav--link--lang--icon{
     width:43px;
-    height:43px;
-    fill:white;
-    
+    height:43px;    
 }
-
 .nav--logo{
     color:white;
     margin:24px;
@@ -130,7 +93,6 @@ body{
     top:103px;
     background-color:white;
     padding:30px 50px;
-    color:black;
     border-radius:10px;
     transition: visibility 100ms, opacity 100ms;
 }
@@ -138,7 +100,6 @@ body{
     visibility: visible;
     opacity:1;
 }
-
 .langmenu-link{
     font-size:23px;
     margin:15px 10px;
@@ -147,10 +108,8 @@ body{
     text-decoration:none;
 }
 .title{
-    color:white;
     font-family:"Texturina";
     font-size:50px;
-    text-align:left;
     padding:30px 0px 0px 40px;   
 }
 .title--start{
@@ -159,7 +118,6 @@ body{
     padding:0px;
 }
 #subtitle{
-    color:white;
     text-align:left;
     font-size:20px;
     font-family:"Castoro";
@@ -193,9 +151,8 @@ body{
 .tag{
     background-color: white;
     border-radius:8px;
-    padding:10px;
+    padding:12px;
     margin-right:20px;
-    bottom:5px;
 }
 .tag--icon{
     color:black;
@@ -213,4 +170,10 @@ body{
     font-weight:500;
     position:relative;
     top:0.5px
+}
+
+@media screen and (min-width:1000px) and (max-width:1300px) {}
+
+@media only screen and (hover: none) and (pointer: coarse){
+    
 }
