@@ -28,7 +28,8 @@ body{
 }
 .screen{
     width:100%;
-    min-height:100vh;
+    /* min-height:100vh; */
+    min-height: -webkit-fill-available;
     background-image:radial-gradient(#555 1px, rgba(0, 0, 0, 0) 1px);
     background-size:25px 25px;
 }
