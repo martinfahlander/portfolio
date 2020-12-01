@@ -179,9 +179,9 @@ body{
     top:0.5px
 }
 
-@media screen and (min-width:1000px) and (max-width:1300px) {}
+/* @media screen and (min-width:1000px) and (max-width:1300px) {} */
 
-/* @media only screen and (hover: none) and (pointer: coarse){ */
+@media only screen and (hover: none) and (pointer: coarse){
     .background{
         background-size:40px 40px, cover;
     }
