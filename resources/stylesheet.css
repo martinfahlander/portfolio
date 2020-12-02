@@ -191,17 +191,16 @@ body{
     }
     .content{
         width: calc(100% - 200px);
-        padding:300px 100px;
     }
     .title--start{
         font-size:90px;
     }
     .subtitle{
-        font-size:30px;
+        font-size:40px;
     }
     .tag{
         border-radius:14px;
-        padding:24px;
+        padding:24px 20px;
         margin-right:40px;
     }
     .tag--icon{
@@ -224,7 +223,7 @@ body{
         visibility:hidden;
     }
     .nav--right{
-        margin:40px;
+        margin:40px 35px;
     }
     .nav--link{
         margin: 28px 34px;
