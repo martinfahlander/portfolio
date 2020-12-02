@@ -28,8 +28,10 @@ body{
 }
 .screen{
     width:100%;
-    /* min-height:100vh; */
-    min-height: -webkit-fill-available;
+    min-height:100vh;
+    min-height:-moz-available;          /* WebKit-based browsers will ignore this. */
+    min-height:-webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    min-height:fill-available;
     background-image:radial-gradient(#555 1px, rgba(0, 0, 0, 0) 1px);
     background-size:25px 25px;
 }
@@ -45,9 +47,10 @@ body{
 }
 .content{
     width:70%;
+    padding:0px 15%;
 }
 .content--start{
-    /* padding:calc(50vh - 120px) 15% 0px 15%; */
+    padding-top:calc(50vh - 125px);
     height:220px;
 }
 .content--portfolio{
@@ -202,10 +205,10 @@ body{
         margin-right:40px;
     }
     .tag--icon{
-        width:48px;
-        height:48px;
-        top:18px;
-        left:0px;
+        width:38px;
+        height:38px;
+        top:12px;
+        left:3px;
     }
     .tag--text{
         margin:0px 12px 0px 20px;
