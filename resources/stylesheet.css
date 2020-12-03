@@ -32,8 +32,6 @@ body{
     min-height:-moz-available;          /* WebKit-based browsers will ignore this. */
     min-height:-webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
     min-height:fill-available;
-    background-image:radial-gradient(#555 1px, rgba(0, 0, 0, 0) 1px);
-    background-size:25px 25px;
 }
 .footer--content{
     padding:50px 15%;
@@ -41,9 +39,15 @@ body{
 .footer--link{
     color:white;
 }
-.background{
+.screen--start{
     background-image:radial-gradient(#555 1px, rgba(0, 0, 0, 0) 1px), url("background.jpg");
     background-size:25px 25px, cover;
+    display:flex;
+    align-items:center;
+}
+.screen--portfolio{
+    background-image:radial-gradient(#555 1px, rgba(0, 0, 0, 0) 1px);
+    background-size:25px 25px;
 }
 .content{
     width:70%;
@@ -51,7 +55,6 @@ body{
 }
 .content--start{
     padding-top:calc(50vh - 125px);
-    height:220px;
 }
 .content--portfolio{
     /* padding:0px 15%; */
@@ -199,8 +202,7 @@ body{
         padding:100px;
     }
     .content--start{
-        height:400px;
-        padding:calc((-webkit-fill-available / 2) - 200px) 100px;
+        
     }
     .title--start{
         font-size:90px;
