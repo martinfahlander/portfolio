@@ -142,6 +142,7 @@ body{
     font-family:"Castoro";
     padding:0px 0px 23px 0px;
     margin:0px;
+    max-width:700px;
 }
 .subtitle--link{
     color:white;
@@ -210,7 +211,8 @@ body{
         font-size:90px;
     }
     .subtitle{
-        font-size:40px;
+        font-size:35px;
+        max-width:1000px;
     }
     .tag{
         border-radius:14px;
