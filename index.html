@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Lato&family=Texturina:wght@200&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="screen background">
+        <div class="screen screen--start">
             <span class="nav nav--left">
                 <img class="nav--logo" src="resources/icons/code.svg">
             </span>
@@ -34,25 +34,27 @@
             <div class="content content--start">
                 <div class="title title--start">Martin Fahlander</div>
                 <div class="subtitle">En nyfiken och kreativ systemvetare med intresse för design och språk.<br>Alltid öppen för nya utmaningar. Kontakta mig på <a href="mailto:martinfahlander@gmail.com" class="subtitle--link" target="_blank">martinfahlander@gmail.com</a>.</div>
-                <span class="tag">
-                    <img class="tag--icon" src="resources/icons/home.svg">
-                    <span class="tag--text">Skövde</span>
-                </span>
-                <span class="tag">
-                    <img class="tag--icon" src="resources/icons/briefcase.svg">
-                    <span class="tag--text">Tillgänglig</span>
-                </span>
-                <span class="tag">
-                    <img class="tag--icon" src="resources/icons/travel.svg">
-                    <span class="tag--text">Flexibel</span>
-                </span>
+                <div class="tag--container">
+                    <span class="tag">
+                        <img class="tag--icon" src="resources/icons/home.svg">
+                        <span class="tag--text">Skövde</span>
+                    </span>
+                    <span class="tag">
+                        <img class="tag--icon" src="resources/icons/briefcase.svg">
+                        <span class="tag--text">Tillgänglig</span>
+                    </span>
+                    <span class="tag">
+                        <img class="tag--icon" src="resources/icons/travel.svg">
+                        <span class="tag--text">Flexibel</span>
+                    </span>
+                </div>
             </div>
             <a href="#portfolio" class="icon--downarrow--link">
                 <div>öppna portfolio</div>
                 <img class="icon--downarrow" src="resources/icons/angle-double-down.svg">
             </a>
         </div>
-        <div class="screen" id="portfolio" name="portfolio">
+        <div class="screen screen--portfolio" id="portfolio" name="portfolio">
             <div class="content content--portfolio">
                 <div class="title">Portfolio</div>
                 <div class="container">
