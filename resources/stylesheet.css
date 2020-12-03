@@ -70,7 +70,9 @@ body{
     margin:25px;
 }
 .nav--center{
-    margin:28px auto;
+    margin:25px calc(50% - 75px);
+    width:150px;
+    justify-content:center;
 }
 .nav--right{
     right:0px;
@@ -86,8 +88,8 @@ body{
 }
 .nav--icon{
     padding:0px;
-    width:33px;
-    height:33px;
+    width:35px;
+    height:35px;
 }
 .nav--link--lang{
     cursor:pointer;
@@ -168,26 +170,26 @@ body{
 .tag{
     background-color: white;
     border-radius:8px;
-    padding:12px;
+    padding:10px;
     margin-right:20px;
 }
 .tag--icon{
     color:black;
     width:24px;
     height:24px;
-    top:3px;
-    left:3px;
+    top:2px;
+    left:7px;
     position:relative;
 }
 .tag--text{
     color:black;
-    margin:0px 6px 0px 10px;
+    margin:0px 10px 0px 16px;
     padding-bottom:3px;
     font-family:"Lato";
     font-size: 16px;
     font-weight:500;
     position:relative;
-    top:0.5px
+    bottom:3px
 }
 
 /* @media screen and (min-width:1000px) and (max-width:1300px) {} */
@@ -211,19 +213,19 @@ body{
     }
     .tag{
         border-radius:14px;
-        padding:24px 20px;
+        padding:20px;
         margin-right:40px;
     }
     .tag--icon{
         width:38px;
         height:38px;
-        top:12px;
-        left:3px;
+        top:0px;
+        left:10px;
     }
     .tag--text{
-        margin:0px 12px 0px 20px;
+        margin:0px 18px 0px 28px;
         font-size: 30px;
-        top:5px
+        bottom:5px
     }
     .nav--left{
         visibility:visible;
