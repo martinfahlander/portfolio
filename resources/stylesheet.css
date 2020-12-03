@@ -70,7 +70,7 @@ body{
     margin:25px;
 }
 .nav--center{
-    margin:28px calc(50% - 25px);
+    margin:28px auto;
 }
 .nav--right{
     right:0px;
@@ -194,14 +194,14 @@ body{
 
 @media only screen and (hover: none) and (pointer: coarse){
     .background{
-        background-size:40px 40px, cover;
+        background-size:50px 50px, cover;
     }
     .content{
-        width: calc(100% - 200px);
-        padding:100px;
+        width: calc(100% - 150px);
+        padding:0px 75px;
     }
     .content--start{
-        
+
     }
     .title--start{
         font-size:90px;
