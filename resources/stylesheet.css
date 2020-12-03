@@ -188,18 +188,19 @@ body{
     top:0.5px
 }
 
-/* @media screen and (min-width:1000px) and (max-width:1300px) {} */
+@media screen and (min-width:1000px) and (max-width:1300px) {}
 
-@media only screen and (hover: none) and (pointer: coarse){
+/* @media only screen and (hover: none) and (pointer: coarse){ */
     .background{
         background-size:40px 40px, cover;
     }
     .content{
         width: calc(100% - 200px);
-        padding:calc(50vh - 200px) 100px;
+        padding:100px;
     }
     .content--start{
         height:400px;
+        padding:calc((-webkit-fill-available / 2) - 200px) 100px;
     }
     .title--start{
         font-size:90px;
