@@ -195,7 +195,7 @@ body{
 
 /* @media screen and (min-width:1000px) and (max-width:1300px) {} */
 
-/* @media only screen and (hover: none) and (pointer: coarse){ */
+@media only screen and (hover: none) and (pointer: coarse){
     .background{
         background-size:50px 50px, cover;
     }
@@ -215,7 +215,7 @@ body{
     .tag{
         border-radius:14px;
         padding:20px;
-        margin:0px 40px 35px 0px;
+        margin:0px 30px 30px 0px;
     }
     .tag--icon{
         width:38px;
