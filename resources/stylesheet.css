@@ -195,8 +195,11 @@ body{
         background-size:40px 40px, cover;
     }
     .content{
-        width: calc(100% - 200px);
-        padding:0px 100px;
+        width: calc(100% - 400px);
+        padding:calc(50vh - 200px) 200px;
+    }
+    .content--start{
+        height:400px;
     }
     .title--start{
         font-size:90px;
