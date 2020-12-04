@@ -22,15 +22,11 @@
                 <a class="nav--link" href="https://github.com/martinfahlander/" target="_blank">
                     <img class="nav--icon" src="resources/icons/github-original.svg">
                 </a>
-                <span class="nav--link nav--link--lang" id="langmenu--button">
+                <button class="nav--link nav--link--lang" id="langmenu--button" onclick="toggleLangmenu()">
                     <img class="nav--link--lang--icon" id="langmenu--button--icon" src="resources/icons/world.svg">
-                </span>
+                </button>
             </span>
-            <div class="langmenu" id="langmenu">
-                <a class="langmenu-link" href="index.html">Svenska</a>
-                <a class="langmenu-link" href="en/index.html">English</a>
-                <a class="langmenu-link" href="de/index.html">Deutsch</a>
-            </div>
+            
             <div class="content content--start">
                 <div class="title title--start">Martin Fahlander</div>
                 <div class="subtitle">En nyfiken och kreativ systemvetare med intresse för design och språk. Alltid öppen för nya utmaningar. Kontakta mig på <a href="mailto:martinfahlander@gmail.com" class="subtitle--link" target="_blank">martinfahlander@gmail.com</a>.</div>
@@ -44,8 +40,12 @@
                         <span class="tag--text">Tillgänglig</span>
                     </span>
                     <span class="tag">
-                        <img class="tag--icon" src="resources/icons/travel.svg">
+                        <img class="tag--icon" src="resources/icons/map.svg">
                         <span class="tag--text">Flexibel</span>
+                    </span>
+                    <span class="tag">
+                        <img class="tag--icon" src="resources/icons/travel.svg">
+                        <span class="tag--text">Distans</span>
                     </span>
                 </div>
             </div>
@@ -95,17 +95,26 @@
                 </div>
             </footer>
         </div>
+        <div class="langmenu" id="langmenu">
+            <div class="langmenu--content">
+                <div class="langmenu--close--container">
+                    <button class="langmenu--close" onclick="toggleLangmenu()">
+                        <img class="langmenu--close--icon" src="resources/icons/close.svg">
+                    </button>
+                </div>
+                <a class="langmenu--link langmenu--link--active" href="index.html">Svenska</a>
+                <a class="langmenu--link" href="en/index.html">English</a>
+                <a class="langmenu--link" href="de/index.html">Deutsch</a>
+            </div>
+        </div>
         <script>
             // var langmenu = document.getElementById('langmenu');
-            var langmenubutton = document.getElementById('langmenu--button');
+            // var langmenubutton = document.getElementById('langmenu--button');
             // document.body.addEventListener("click", toggleLangmenu);
-            langmenubutton.addEventListener("click", toggleLangmenu);
+            // langmenubutton.addEventListener("click", toggleLangmenu);
             function toggleLangmenu(){
                 langmenu.classList.toggle("langmenu--active");
             }
-            // function disableLangmenu(){
-            //     langmenu.classList.toggle("langmenu--active");  
-            // }
         </script>
     </body>
 </html>
