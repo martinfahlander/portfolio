@@ -22,6 +22,7 @@ body{
 }
 .item--image{
     width:350px;
+    height:197px;
     background-color:#333;
 }
 .item--text{
@@ -359,6 +360,7 @@ body{
 
     .item--image{
         width:400px;
+        height:225;
     }
     .item--text{
         margin:0px 40px 0px 40px;
@@ -372,7 +374,7 @@ body{
         margin: 10px 0px 0px 0px;
     }
     .item--description{
-        font-size:25px;
+        font-size:30px;
     }
     .footer--content{
         padding:0px 15% 80px 15%;
