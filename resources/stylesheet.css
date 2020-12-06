@@ -1,6 +1,6 @@
 body{
     margin:0px;
-    background-color: #333;
+    background-color: #222;
     font-family:"Castoro";
     color:white;
 }
@@ -8,23 +8,38 @@ body{
    display:flex;
    justify-content:space-between;
    flex-wrap:wrap;
-   padding:10px 0px 50px 0px; 
+   padding:60px 0px 50px 0px; 
 }
 .item{
-    margin:30px 40px;
-    width:calc(33.333% - 80px);
+    margin:80px 0px;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.item--reverse{
+    flex-direction:row-reverse;
 }
 .item--image{
-    width:100%;
-    height:170px;
-    background-color:#222;
+    width:350px;
+    background-color:#333;
+}
+.item--text{
+    margin:0px 40px 0px 40px;
+    width:350px;
+    display:inline-block;
+    text-align:left;
+    font-size:18px;
+}
+.item--text--reverse{
+    text-align:right;
 }
 .item--title{
-    font-size:25px;
+    font-size:30px;
     margin: 10px 0px 0px 0px;
 }
 .item--description{
-    font-size:16px;
+    font-size:18px;
 }
 .screen{
     width:100%;
@@ -34,7 +49,9 @@ body{
     min-height:fill-available;
 }
 .footer--content{
-    padding:50px 15%;
+    padding:0px 15% 80px 15%;
+    text-align:center;
+    font-size:18px;
 }
 .footer--link{
     color:white;
@@ -56,7 +73,8 @@ body{
 .content--start{
 }
 .content--portfolio{
-    /* padding:0px 15%; */
+    padding:0px 15%;
+    display: inline-block;
 }
 .nav{
     display:flex;
@@ -116,6 +134,9 @@ body{
     top:0px;
     width:100%;
     height:100vh;
+    height:-moz-available;          /* WebKit-based browsers will ignore this. */
+    height:-webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    height:fill-available;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -154,7 +175,7 @@ body{
     color:black;
     text-decoration:none;
     margin-right:100px;
-    margin-left:39px
+    margin-left:100px
 }
 
 .langmenu--link--active{
@@ -164,12 +185,12 @@ body{
 .langmenu--link--active--icon{
     width:19px;
     height:19px;
-    margin-right:17px;
+    margin:0px 17px 0px 58px;
 }
 .title{
     font-family:"Texturina";
     font-size:50px;
-    padding:30px 0px 0px 40px;   
+    padding:30px 0px 0px 0px;   
 }
 .title--start{
     font-size:60px;
@@ -243,9 +264,6 @@ body{
     .content{
         width: calc(100% - 150px);
         padding:0px 75px;
-    }
-    .content--start{
-
     }
     .title--start{
         font-size:90px;
@@ -321,8 +339,8 @@ body{
     .langmenu--link{
         font-size:40px;
         margin:30px;
-        margin-right:200px;
-        margin-left:77px
+        margin-right:160px;
+        margin-left:160px
     }
     
     .langmenu--link--active{
@@ -331,6 +349,35 @@ body{
     .langmenu--link--active--icon{
         width:30px;
         height:30px;
-        margin-right:40px;
+        margin:0px 40px 0px 81px;
+    }
+    .item{
+        margin:160px 80px;
+        width:calc(100% - 160px);
+        justify-content:flex-start;
+    }
+
+    .item--image{
+        width:550px;
+        background-color:#333;
+    }
+    .item--text{
+        margin:0px 40px 0px 40px;
+        width:550px;
+    }
+    .item--text--reverse{
+        text-align:right;
+    }
+    .item--title{
+        font-size:50px;
+        margin: 10px 0px 0px 0px;
+    }
+    .item--description{
+        font-size:25px;
+    }
+    .footer--content{
+        padding:0px 15% 160px 15%;
+        text-align:center;
+        font-size:30px;
     }
 }
