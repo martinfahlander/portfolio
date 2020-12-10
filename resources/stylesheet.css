@@ -343,7 +343,6 @@ body{
         margin-right:160px;
         margin-left:160px
     }
-    
     .langmenu--link--active{
         margin-left:0px;
     }
@@ -353,21 +352,28 @@ body{
         margin:0px 40px 0px 81px;
     }
     .item{
-        margin:80px 0px;
-        width:100%;
-        justify-content:flex-start;
+        margin:80px 10%;
+        width:80%;
+        display:block;
+        flex-direction:row;
+        justify-content:center;
     }
-
+    .item--reverse{
+        flex-direction:row;
+    }
     .item--image{
-        width:400px;
-        height:225;
+        width:100%;
+        height:initial;
+        background-color:#333;
     }
     .item--text{
-        margin:0px 40px 0px 40px;
-        width:550px;
+        margin:20px 0px 20px 0px;
+        width:100%;
+        display:inline-block;
+        text-align:left;
     }
     .item--text--reverse{
-        text-align:right;
+        text-align:left;
     }
     .item--title{
         font-size:50px;
