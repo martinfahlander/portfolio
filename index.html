@@ -8,6 +8,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Lato&family=Texturina:wght@200&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div class="langmenu">
+            <!-- <a class="langmenu--link langmenu--link--active" href="index.html">Svenska</a>-->
+            <a class="langmenu--link" href="en/index.html">English</a>
+            <a class="langmenu--link" href="de/index.html">Deutsch</a>
+            <a class="langmenu--link" href="it/index.html">Italiano</a>
+            <a class="langmenu--link" href="ru/index.html">Русский</a>
+        </div>
         <div class="screen screen--start">
             <span class="nav nav--left">
                 <img class="nav--logo" src="resources/icons/code.svg">
@@ -16,14 +23,17 @@
                 <img class="nav--logo" src="resources/icons/code.svg">
             </span>
             <span class="nav nav--right">
+                <a class="nav--link" href="https://unsplash.com/@martinfahlander" target="_blank">
+                    <img class="nav--icon nav--icon--social" src="resources/icons/unsplash.svg">
+                </a>
                 <a class="nav--link" href="https://www.linkedin.com/in/martin-fahlander-67b08813b/" target="_blank">
-                    <img class="nav--icon" src="resources/icons/linkedin-original.svg">
+                    <img class="nav--icon nav--icon--social" src="resources/icons/linkedin-original.svg">
                 </a>
                 <a class="nav--link" href="https://github.com/martinfahlander/" target="_blank">
-                    <img class="nav--icon" src="resources/icons/github-original.svg">
+                    <img class="nav--icon nav--icon--social" src="resources/icons/github-original.svg">
                 </a>
-                <button class="nav--link nav--link--lang" id="langmenu--button" onclick="toggleLangmenu()">
-                    <img class="nav--link--lang--icon" id="langmenu--button--icon" src="resources/icons/world.svg">
+                <button class="nav--link nav--link--lang" onclick="toggleLangmenu()">
+                    <img class="nav--icon nav--icon--lang" src="resources/icons/world.svg">
                 </button>
             </span>
             <div class="content content--start">
@@ -92,24 +102,12 @@
                 </div>
             </footer> 
         </div>
-        <div class="langmenu" id="langmenu">
-            <div class="langmenu--content">
-                <div class="langmenu--close--container">
-                    <button class="langmenu--close" onclick="toggleLangmenu()">
-                        <img class="langmenu--close--icon" src="resources/icons/close.svg">
-                    </button>
-                </div>
-                <a class="langmenu--link langmenu--link--active" href="index.html">
-                    <img class="langmenu--link--active--icon" src="resources/icons/angle-double-right.svg">
-                    Svenska
-                </a>
-                <a class="langmenu--link" href="en/index.html">English</a>
-                <a class="langmenu--link" href="de/index.html">Deutsch</a>
-            </div>
-        </div>
         <script>
-            function toggleLangmenu(){
-                langmenu.classList.toggle("langmenu--active");
+            function toggleLangmenu () {
+                var langmenu = document.querySelector('.langmenu');;
+                var button = document.querySelector('.nav--icon--lang');
+                langmenu.classList.toggle('langmenu--active');
+                button.classList.toggle('nav--icon--lang--enlarged')
             }
         </script>
     </body>
