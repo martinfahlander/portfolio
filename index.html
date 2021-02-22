@@ -5,57 +5,94 @@
         <link rel="icon" href="resources/icons/code.svg" type="image/gif" sizes="16x16">
         <link rel="stylesheet" href="resources/stylesheet.css?v=1.0">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Lato&family=Texturina:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Lato&family=Texturina:wght@200&family=Open+Sans&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="langmenu">
-            <!-- <a class="langmenu--link langmenu--link--active" href="index.html">Svenska</a>-->
-            <a class="langmenu--link" href="en/index.html">English</a>
-            <a class="langmenu--link" href="de/index.html">Deutsch</a>
-            <a class="langmenu--link" href="it/index.html">Italiano</a>
-            <a class="langmenu--link" href="ru/index.html">Русский</a>
+            <div class="langmenu--triangle"></div>
+            <div class="langmenu--box">
+                <a class="langmenu--link" href="en/index.html">English</a>
+                <a class="langmenu--link" href="de/index.html">Deutsch</a>
+                <a class="langmenu--link" href="it/index.html">Italiano</a>
+                <a class="langmenu--link" href="ru/index.html">Русский</a>
+            </div>
         </div>
         <div class="screen screen--start">
-            <span class="nav nav--left">
-                <img class="nav--logo" src="resources/icons/code.svg">
-            </span>
-            <span class="nav nav--center">
-                <img class="nav--logo" src="resources/icons/code.svg">
-            </span>
+
             <span class="nav nav--right">
                 <a class="nav--link" href="https://unsplash.com/@martinfahlander" target="_blank">
                     <img class="nav--icon nav--icon--social" src="resources/icons/unsplash.svg">
+                    <div class="nav--link--comment">
+                        <div class="nav--link--triangle"></div>
+                        <div class="nav--link--comment--box">Unsplash</div>
+                    </div>
                 </a>
                 <a class="nav--link" href="https://www.linkedin.com/in/martin-fahlander-67b08813b/" target="_blank">
                     <img class="nav--icon nav--icon--social" src="resources/icons/linkedin-original.svg">
+                    <div class="nav--link--comment">
+                        <div class="nav--link--triangle"></div>
+                        <div class="nav--link--comment--box">LinkedIn</div>
+                    </div>
                 </a>
                 <a class="nav--link" href="https://github.com/martinfahlander/" target="_blank">
                     <img class="nav--icon nav--icon--social" src="resources/icons/github-original.svg">
+                    <div class="nav--link--comment">
+                        <div class="nav--link--triangle"></div>
+                        <div class="nav--link--comment--box">Github</div>
+                    </div>
                 </a>
                 <button class="nav--link nav--link--lang" onclick="toggleLangmenu()">
                     <img class="nav--icon nav--icon--lang" src="resources/icons/world.svg">
+                    <!-- <div class="nav--link--comment">
+                        <div class="nav--link--triangle"></div>
+                        <div class="nav--link--comment--box">Språk</div>
+                    </div> -->
                 </button>
             </span>
             <div class="content content--start">
                 <div class="title title--start">Martin Fahlander</div>
-                <div class="subtitle">En nyfiken och kreativ systemvetare med intresse för design och språk. Alltid öppen för nya utmaningar. Kontakta mig på <a href="mailto:martinfahlander@gmail.com" class="subtitle--link" target="_blank">martinfahlander@gmail.com</a>.</div>
+                <div class="subtitle">
+                    En nyfiken och kreativ utvecklare med intresse för design och språk. 
+                    Alltid öppen för nya utmaningar. Kontakta mig på 
+                    <a href="mailto:martinfahlander@gmail.com" class="subtitle--link" target="_blank">
+                    martinfahlander@gmail.com</a>.
+                </div>
                 <div class="tag--container">
-                    <span class="tag">
-                        <img class="tag--icon" src="resources/icons/home.svg">
-                        <span class="tag--text">Skövde</span>
-                    </span>
-                    <span class="tag">
-                        <img class="tag--icon" src="resources/icons/briefcase.svg">
-                        <span class="tag--text">Tillgänglig</span>
-                    </span>
-                    <span class="tag">
-                        <img class="tag--icon" src="resources/icons/map.svg">
-                        <span class="tag--text">Flexibel</span>
-                    </span>
-                    <span class="tag">
+                    <div class="tag">
+                        <div class="tag--box">
+                            <img class="tag--icon" src="resources/icons/home.svg">
+                            <span class="tag--text">Skövde</span>
+                        </div>
+                        <div class="tag--comment">
+                            <div class="tag--comment--triangle"></div>
+                            <div class="tag--comment--box">Uppvuxen i Skövde</div>
+                        </div>
+                    </div>
+                    <div class="tag">
+                        <div class="tag--box">
+                            <img class="tag--icon" src="resources/icons/map.svg">
+                            <span class="tag--text">Flexibel</span>
+                        </div>
+                        <div class="tag--comment">
+                            <div class="tag--comment--triangle"></div>
+                            <div class="tag--comment--box">Villig att byta ort</div>
+                        </div>
+                    </div>
+                    
+                    <div class="tag">
+                        <div class="tag--box">
+                            <img class="tag--icon" src="resources/icons/briefcase.svg">
+                            <span class="tag--text">Tillgänglig</span>
+                        </div>
+                        <div class="tag--comment">
+                            <div class="tag--comment--triangle"></div>
+                            <div class="tag--comment--box">Tidsperspektiv - omgående</div>
+                        </div>
+                    </div>
+                    <!-- <span class="tag">
                         <img class="tag--icon" src="resources/icons/travel.svg">
                         <span class="tag--text">Distans</span>
-                    </span>
+                    </span> -->
                 </div>
             </div>
             <a href="#portfolio" class="icon--downarrow--link">
@@ -63,7 +100,7 @@
                 <img class="icon--downarrow" src="resources/icons/angle-double-down.svg">
             </a>
         </div>
-        <div class="screen--portfolio" id="portfolio" name="portfolio">
+        <div class="screen--portfolio" id="portfolio">
             <div class="content content--portfolio">
                 <div class="item">
                     <img class="item--image" src="resources/project404.png">
@@ -103,12 +140,26 @@
             </footer> 
         </div>
         <script>
+
+            var langmenu = document.querySelector('.langmenu');
+            var button = document.querySelector('.nav--icon--lang');
+
             function toggleLangmenu () {
-                var langmenu = document.querySelector('.langmenu');;
-                var button = document.querySelector('.nav--icon--lang');
                 langmenu.classList.toggle('langmenu--active');
-                button.classList.toggle('nav--icon--lang--enlarged')
+                button.classList.toggle('nav--icon--lang--enlarged');
             }
+
+            function deactivateLangmenu () {
+                langmenu.classList.remove('langmenu--active');
+                button.classList.remove('nav--icon--lang--enlarged')
+            }
+            
+            document.addEventListener('mouseup', function(e) {
+                if (!langmenu.contains(e.target) && !button.contains(e.target)) {
+                    deactivateLangmenu();
+                }
+            });
+
         </script>
     </body>
 </html>
